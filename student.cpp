@@ -19,7 +19,7 @@ int main() {
     int day = ltm->tm_mday;
     int month = 1 + ltm->tm_mon;
     int year = 1900 + ltm->tm_year;
-    
+    do{
     cout << ">> Sim Toolkit <<" << endl;
     cout << "1. Send Money" << endl;
     cout << "2. Paybill" << endl;
@@ -131,6 +131,7 @@ int main() {
         cout << "Press any key to go back to the menu...";
         cin.ignore(); // Ignore any previous input
         cin.get(); 
-    }
-
+    } while(true);
+return 0;
+}
 
